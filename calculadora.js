@@ -13,6 +13,19 @@ dividir(num1,num2){
 multiplicar(num1,num2){
     return parseInt(num1) * parseInt(num2);
 }
+potenciar(num,exp){
+    let numero = num;
+    for(var i = 1; i < exp; i ++){
+        numero = numero * num;
+    }
+    return numero;
+}
+   raizCuadrada(num){
+       return Math.sqrt(num);
+}
+raizCubica(num){
+    return Math.cbrt(num);
+}
 }
 const calculadora = new Calculadora ();
 alert("¿que operacion deseas realizar?");
